@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+}
+
+
+form{
+    max-width: 400px;
+    margin: auto;
+
+}
+
+.ur{
+    display: flex;
+    flex-direction: row;
+    margin:5px;
+}
+
+.ur label{
+    flex: 0 0 40%;
+    text-align: right;
+    padding: 5px;
+}
+
+.ur input{
+    flex: 0 0 60%;
+}
+
+form .radio{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+form .radio label{
+    flex: 0 0 50%;
+    text-align: right;
+    padding: 5px;
+}
+
+.hobbit{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hobbit label{
+    flex: 0 0 50%;
+    text-align: right;
+    padding: 5px;
+
+}
+
+
+#hobleir{
+    height: 200px;
+}
+
+@media screen and (max-width: 600px){
+    .ur{
+        flex-direction: column;
+
+    }
+
+    form{
+        max-width: 300px;
+    }
+
+    .ur label{
+        text-align: left;
+    }
+}
+    

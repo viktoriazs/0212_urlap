@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <header><h1>Profile</h1></header>
+        <article>
+            <form action="feldolgoz.php" method="get">
+            <fieldset>
+                <legend>Adatok a felhasznalotol</legend>
+                <div class="ur">
+                    <label for="nev">Nev</label>
+                    <input type="nev" name="nev" id="nev">
+                </div>
+
+                <div class="ur">
+                    <label for="profilkep">Profilkep feltoltese</label>
+                    <input type="file" name="profilkep" id="profilkep">
+                </div>
+
+                <div class="ur">
+                    <label for="szul">Szuletesi datum</label>
+                    <input type="date" name="szul" id="szul" min="1900-01-02">
+                </div>
+
+                <div class="ur">
+                    <label for="lakc">Lakcim</label>
+                    <input type="text" name="lakc" id="lakc">
+                </div>
+
+                
+                <div class="ur">
+                    <label for="test">Testverek szama</label>
+                    <input type="number" name="test" id="test" min="0" max="20">
+                </div>
+
+                <fieldset>
+                    <legend>Nem</legend>
+                    <div class="radio">
+                        <label for="ferfi">Ferfi</label>
+                        <input type="radio" name="nem" id="ferfi">
+
+                        <label for="no">No</label>
+                        <input type="radio" name="nem" id="no">
+
+                        <label for="mas">Mas</label>
+                        <input type="radio" name="nem" id="mas">
+                    </div>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Hobbik</legend>
+                    <div class="hobbit">
+                        <label for="olv">Olvasas</label>
+                        <input type="checkbox" name="hobbit" id="olv" value="olvas">
+
+                        <label for="bic">Biciklizes</label>
+                        <input type="checkbox" name="hobbit" id="bic" value="bicikli">
+
+                        <label for="uv">Uveg fujas</label>
+                        <input type="checkbox" name="hobbit" id="uv" value="uvegfuj">
+
+                        <label for="mas">Mas</label>
+                        <input type="checkbox" name="hobbit" id="mas" value="mas">
+
+
+                    </div>
+                </fieldset>
+
+                <div class="ur">
+                    <label for="hobleir">Hobbik leirasa</label>
+                    <input type="text" name="hobleir" id="hobleir">
+                </div>
+
+                <div>
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+        
+
+
+            </fieldset>
+            </form>
+
+
+            </div>
+        </article>
+        <footer></footer>
+    </main>
+</body>
+</html>
